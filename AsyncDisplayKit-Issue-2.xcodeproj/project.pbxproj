@@ -12,9 +12,12 @@
 		630AD02E1C03FC4C00C8BA78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630AD02C1C03FC4C00C8BA78 /* Main.storyboard */; };
 		630AD0301C03FC4C00C8BA78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 630AD02F1C03FC4C00C8BA78 /* Assets.xcassets */; };
 		630AD0331C03FC4C00C8BA78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630AD0311C03FC4C00C8BA78 /* LaunchScreen.storyboard */; };
+		630AD03F1C04067400C8BA78 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630AD03E1C04067400C8BA78 /* ImageManager.swift */; };
+		7E77DAA474FA4AE2375899DC /* libPods-AsyncDisplayKit-Issue-2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92ADEFD853B77E074A017698 /* libPods-AsyncDisplayKit-Issue-2.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4DE201D252E127499C3C1F98 /* Pods-AsyncDisplayKit-Issue-2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsyncDisplayKit-Issue-2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AsyncDisplayKit-Issue-2/Pods-AsyncDisplayKit-Issue-2.debug.xcconfig"; sourceTree = "<group>"; };
 		630AD0251C03FC4C00C8BA78 /* AsyncDisplayKit-Issue-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AsyncDisplayKit-Issue-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		630AD0281C03FC4C00C8BA78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		630AD02A1C03FC4C00C8BA78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,10 @@
 		630AD02F1C03FC4C00C8BA78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		630AD0321C03FC4C00C8BA78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		630AD0341C03FC4C00C8BA78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		630AD03A1C03FD9500C8BA78 /* AsyncDisplayKit-Issue-2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AsyncDisplayKit-Issue-2-Bridging-Header.h"; sourceTree = "<group>"; };
+		630AD03E1C04067400C8BA78 /* ImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		92ADEFD853B77E074A017698 /* libPods-AsyncDisplayKit-Issue-2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AsyncDisplayKit-Issue-2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDACE72DD75FBBDBBAFB3B56 /* Pods-AsyncDisplayKit-Issue-2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsyncDisplayKit-Issue-2.release.xcconfig"; path = "Pods/Target Support Files/Pods-AsyncDisplayKit-Issue-2/Pods-AsyncDisplayKit-Issue-2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +36,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E77DAA474FA4AE2375899DC /* libPods-AsyncDisplayKit-Issue-2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		520F449D5A3126EEC049724F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92ADEFD853B77E074A017698 /* libPods-AsyncDisplayKit-Issue-2.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		630AD01C1C03FC4C00C8BA78 = {
 			isa = PBXGroup;
 			children = (
 				630AD0271C03FC4C00C8BA78 /* AsyncDisplayKit-Issue-2 */,
 				630AD0261C03FC4C00C8BA78 /* Products */,
+				B7C900D4AF745287A9EC7911 /* Pods */,
+				520F449D5A3126EEC049724F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +74,23 @@
 			children = (
 				630AD0281C03FC4C00C8BA78 /* AppDelegate.swift */,
 				630AD02A1C03FC4C00C8BA78 /* ViewController.swift */,
+				630AD03E1C04067400C8BA78 /* ImageManager.swift */,
 				630AD02C1C03FC4C00C8BA78 /* Main.storyboard */,
 				630AD02F1C03FC4C00C8BA78 /* Assets.xcassets */,
 				630AD0311C03FC4C00C8BA78 /* LaunchScreen.storyboard */,
 				630AD0341C03FC4C00C8BA78 /* Info.plist */,
+				630AD03A1C03FD9500C8BA78 /* AsyncDisplayKit-Issue-2-Bridging-Header.h */,
 			);
 			path = "AsyncDisplayKit-Issue-2";
+			sourceTree = "<group>";
+		};
+		B7C900D4AF745287A9EC7911 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DE201D252E127499C3C1F98 /* Pods-AsyncDisplayKit-Issue-2.debug.xcconfig */,
+				FDACE72DD75FBBDBBAFB3B56 /* Pods-AsyncDisplayKit-Issue-2.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +100,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 630AD0371C03FC4C00C8BA78 /* Build configuration list for PBXNativeTarget "AsyncDisplayKit-Issue-2" */;
 			buildPhases = (
+				7B75C6E60B6034FF2F53A6EE /* Check Pods Manifest.lock */,
 				630AD0211C03FC4C00C8BA78 /* Sources */,
 				630AD0221C03FC4C00C8BA78 /* Frameworks */,
 				630AD0231C03FC4C00C8BA78 /* Resources */,
+				82A482678C9F1F52793907A7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,11 +161,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7B75C6E60B6034FF2F53A6EE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		82A482678C9F1F52793907A7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AsyncDisplayKit-Issue-2/Pods-AsyncDisplayKit-Issue-2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		630AD0211C03FC4C00C8BA78 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				630AD03F1C04067400C8BA78 /* ImageManager.swift in Sources */,
 				630AD02B1C03FC4C00C8BA78 /* ViewController.swift in Sources */,
 				630AD0291C03FC4C00C8BA78 /* AppDelegate.swift in Sources */,
 			);
@@ -245,23 +310,30 @@
 		};
 		630AD0381C03FC4C00C8BA78 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DE201D252E127499C3C1F98 /* Pods-AsyncDisplayKit-Issue-2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "AsyncDisplayKit-Issue-2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.asdk.AsyncDisplayKit-Issue-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AsyncDisplayKit-Issue-2/AsyncDisplayKit-Issue-2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		630AD0391C03FC4C00C8BA78 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDACE72DD75FBBDBBAFB3B56 /* Pods-AsyncDisplayKit-Issue-2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "AsyncDisplayKit-Issue-2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.asdk.AsyncDisplayKit-Issue-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AsyncDisplayKit-Issue-2/AsyncDisplayKit-Issue-2-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -284,6 +356,7 @@
 				630AD0391C03FC4C00C8BA78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
